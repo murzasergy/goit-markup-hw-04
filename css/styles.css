@@ -8,6 +8,8 @@
   --footer-color-text: #e7e9fc;
   --background-color-section: #f4f4fd;
   --card-set-gap: 24px;
+  --border-color: #8e8f99;
+  --teal-color: teal;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -205,7 +207,7 @@ img {
   display: block;
   width: 264px;
   height: 112px;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   /* background-image: url(../images/antenna.svg); */
   background-repeat: no-repeat;
   background-position: center;
@@ -307,44 +309,17 @@ img {
   text-align: center;
 }
 .card-text-container {
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   padding-top: 32px;
   padding-bottom: 32px;
- 
 }
 
 .social-media {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
- 
-  /* flex-grow: 0; */
   text-align: center;
-  color: #FFFFFF;
+  color: var(--white-color);
 }
-.social-media-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color:#8e8f99;;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.blok-social-media {
- display: block;
- display: flex;
- outline: 1px solid white;
- width: 100%;
-  height: 100%;
-
-align-items: center;
-justify-content: center;
-}
-
 
 .our-team-soc-list {
   display: flex;
@@ -352,12 +327,10 @@ justify-content: center;
   padding-left: 0px;
   gap: 24px;
   margin-top: 8px;
-  
 }
 .our-team-soc-item {
   width: 40px;
   height: 40px;
-  
 }
 .our-team-soc-link {
   width: 100%;
@@ -367,7 +340,6 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .our-team-soc-link:hover,
 .our-team-soc-link:focus {
@@ -376,7 +348,6 @@ justify-content: center;
 .our-team-soc-icon {
   fill: var(--white-color);
 }
-
 
 .our-team-soc-link:hover .our-team-soc-icon {
   fill: tomato;
@@ -388,10 +359,9 @@ justify-content: center;
   margin-right: 24px;
   padding-left: 0px;
   border-radius: 4px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--border-color);
   align-items: center;
   display: flex;
-  
 }
 .customers-list-icon:last-child {
   margin-right: 0;
@@ -402,12 +372,10 @@ justify-content: center;
   /* outline: 1px solid black; */
   margin-top: 120px;
   margin-bottom: 120px;
-  
 }
 .customers-link {
   padding: 16px 32px;
-  fill: #8e8f99;
-  
+  fill: var(--border-color);
 }
 /* .customers-link:hover .customers-list-icon{
  fill: var(--footer-color-logo);
@@ -418,11 +386,10 @@ justify-content: center;
   border-color: var(--hover-color);
   fill: var(--hover-color);
 }
-  .customers-list-icon:hover,
-  .customers-list-icon:focus {
-    border-color: var(--hover-color);
-  }
-  
+.customers-list-icon:hover,
+.customers-list-icon:focus {
+  border-color: var(--hover-color);
+}
 
 /* footer */
 .footer-logo.link {
@@ -446,18 +413,17 @@ justify-content: center;
 }
 .footer-text-cotainer {
   max-width: 264px;
-    margin-right: 120px;
- }
- .footer-soc-title {
-
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-margin-bottom: 16px;
- }
- .footer-soc-link {
+  margin-right: 120px;
+}
+.footer-soc-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+.footer-soc-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -465,19 +431,18 @@ margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--teal-color);
+}
 
- }
- .footer-soc-link:hover,
- .footer-soc-link:focus {
-  background-color: teal;
- }
- 
-  .footer-soc-list {
+.footer-soc-list {
   gap: 16px;
- }
- .footer-soc-icon {
-  fill: #F4F4FD;
- }
+}
+.footer-soc-icon {
+  fill: var(--footer-color-logo);
+}
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -486,7 +451,6 @@ margin-bottom: 16px;
 .footer-container {
   display: flex;
 }
-  
 
 /* portfolio */
 
@@ -558,7 +522,6 @@ margin-bottom: 16px;
   color: var(--title-color);
 }
 .card-text-container-portfolio {
- 
   padding: 32px 0 32px 16px;
   border-bottom: 1px solid var(--footer-color-text);
   border-right: 1px solid var(--footer-color-text);
@@ -593,7 +556,16 @@ margin-bottom: 16px;
 .btn:hover {
   background: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-color: var(--hover-color);
   color: var(--white-color);
+}
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
