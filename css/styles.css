@@ -35,7 +35,7 @@ body {
 .list {
   list-style: none;
   display: flex;
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
 }
 .container {
@@ -95,7 +95,6 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -115,7 +114,6 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -135,7 +133,6 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-
   margin-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
@@ -207,11 +204,8 @@ img {
   display: block;
   width: 264px;
   height: 112px;
-  /* outline: 1px solid black; */
-  /* background-image: url(../images/antenna.svg); */
   background-repeat: no-repeat;
   background-position: center;
-  padding: 24px 100px;
   margin-bottom: 8px;
   background-color: var(--background-color-section);
   border-radius: 4px;
@@ -258,7 +252,6 @@ img {
 
 .section-title {
   margin-bottom: 72px;
-
   color: var(--title-color);
   font-size: 36px;
   line-height: 1.11;
@@ -290,7 +283,6 @@ img {
   order: 0;
   flex-grow: 0;
   margin-bottom: 8px;
-
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -349,33 +341,35 @@ img {
   fill: var(--white-color);
 }
 
-.our-team-soc-link:hover .our-team-soc-icon {
+/* .our-team-soc-link:hover .our-team-soc-icon {
   fill: tomato;
-}
+} */
 
 /* section-customers */
 
 .customers-list-icon {
   margin-right: 24px;
   padding-left: 0px;
-  border-radius: 4px;
-  border: 1px solid var(--border-color);
-  align-items: center;
-  display: flex;
 }
 .customers-list-icon:last-child {
-  margin-right: 0;
+  margin-right: 24;
 }
 .section-customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-icons-list {
   display: flex;
-  justify-content: center;
-  /* outline: 1px solid black; */
-  margin-top: 120px;
-  margin-bottom: 120px;
 }
 .customers-link {
-  padding: 16px 32px;
   fill: var(--border-color);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+  width: 168px;
 }
 /* .customers-link:hover .customers-list-icon{
  fill: var(--footer-color-logo);
@@ -567,5 +561,4 @@ img {
 .project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
 }
